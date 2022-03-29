@@ -33,9 +33,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#team">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">My Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#journey">My Journey</a></li>
                     <!--  <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
                 </ul>
@@ -47,15 +47,15 @@
         <div class="container">
             <div class="masthead-subheading">Hi, My Name Is</div>
             <div class="masthead-heading text-uppercase">Caroline Lui</div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#team">Who Am I?</a>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#about">Who Am I?</a>
         </div>
     </header>
     <!-- Team-->
-    <section class="page-section bg-med" id="team">
+    <section class="page-section bg-med" id="about">
         <div class="container">
             <div class="text-left">
                 <h2 class="section-heading text-uppercase">About Me</h2>
-                <h3 class="section-subheading text-muted">Everything you need to know in 100 words or less!</h3>
+                <h3 class="section-subheading text-muted">My interests, my mission, and what I'm up to</h3>
             </div>
             <div class="row">
                 <div class="col-lg-3">
@@ -64,10 +64,15 @@
                         <h4></h4>
                         <p class="text-muted"></p>
 
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-file"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fa fa-envelope "></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/cel243" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2"
+                            href="https://www.linkedin.com/in/caroline-lui-877638174/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="assets/_RESUME_.pdf" target="_blank"><i
+                                class="fa fa-file"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:cel243@cornell.edu" target="_blank"><i
+                                class="fa fa-envelope "></i></a>
 
                     </div>
                 </div>
@@ -80,9 +85,10 @@
                                 <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
                             </span>
                         </div>
-                        <h4 class="my-3">Where I Am Now</h4>
-                        <p class="text-muted">I am a student at Cornell University. yada yada yada .... graduation year,
-                            courses????? maybe </p>
+                        <h4 class="my-3">Where I Am</h4>
+                        <p class="text-muted">
+                            I am currently in my last semester at Cornell University, as a Computer Science major in the
+                            College of Engineering. </p>
                     </div>
                 </div>
                 <div class="col-lg-2-mine">
@@ -94,7 +100,10 @@
                             </span>
                         </div>
                         <h4 class="my-3">My Mission</h4>
-                        <p class="text-muted">This'll probabyl be a statement about what kind of job I want</p>
+                        <p class="text-muted">
+                            I chose the Computer Science major because I love to build things, and because I hope to
+                            create technologies that impact the lives of people all around the world.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-2-mine">
@@ -106,8 +115,10 @@
                         </span>
                     </div>
                     <h4 class="my-3">My Interests</h4>
-                    <p class="text-muted">Probably career-related interests (could list some relevant courses here), but
-                        I might also include non-career related stuff?</p>
+                    <p class="text-muted">
+                        My passions lie in data infrastructure management! I love SQL, data pipelines, and backend
+                        infrastructure work.
+                    </p>
                 </div>
             </div>
 
@@ -133,11 +144,11 @@
 
                 <div class="col-lg-2 col-sm-6 mb-4 appear-to-fix-shrink"></div>
 
-                <div class="col-lg-2 col-sm-6 mb-4 special-col">
+                <div class="col-lg-2 col-sm-6 mb-4 special-col no-padding">
                     <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/music.jpg" alt="..." />
 
+                    <img class="img-fluid" src="assets/img/portfolio/music.jpg" alt="..." />
+                    <div class="portfolio-item">
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">AI Music Generation</div>
                             <div class="portfolio-caption-subheading text-muted">Comparing classical piano music
@@ -149,19 +160,38 @@
                 <div class="col-lg-10 col-sm-6 mb-4 special-col">
                     <div class="portfolio-description">
                         <ul>
-                            <li>fadjlkasdflkjhnjer evjnefje ejlnef</li>
-                            <li>afwlh filuhneg fwkjnwe</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr afwlh filuhneg fwkjnwe afwlh filuhneg fwkjnwe</li>
+                            <li>
+                                Designed and trained a variety of N-Gram language models and Recurrent Neural Networks
+                                for classical piano music generation to compare probabalistic and neural approaches to
+                                music
+                                generation
+                            </li>
+                            <li>
+                                Experimented with the models to evaluate how context, data representation, structural
+                                components of the models, etc., contributed to music generation performance.
+                            </li>
+                            <li>
+                                Used **kern ASCII representation of music, collecting and preprocessing over 250
+                                classical piano pieces for our training data
+                            </li>
+                            <li>
+                                Out best model received a median score of 5/5 from survey respondents rating the
+                                likelihood that the music was human-generated
+                            </li>
                         </ul>
                     </div>
                     <div class="portfolio-buttons">
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Report</a>
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Presentation</a>
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Slides</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="http://tinyurl.com/ai-music-generation-report" target=_blank rel=noopener>Report</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="https://www.youtube.com/watch?v=EfmNYA5dQPs" target=_blank rel=noopener>Video
+                            Presentation</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="https://www.youtube.com/watch?v=Ob744CN1ToY" target=_blank rel=noopener>Model
+                            Output</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="https://docs.google.com/presentation/d/1ZdhVE-4UrWrXp4iUaTHvpo5eOU74Ecu9LeGsmaAChUM/edit?usp=sharing"
+                            target=_blank rel=noopener>Slides</a>
                     </div>
                 </div>
 
@@ -173,11 +203,11 @@
 
                 </div>
 
-                <div class="col-lg-2 col-sm-6 mb-4 special-col">
+                <div class="col-lg-2 col-sm-6 mb-4 special-col no-padding">
                     <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/book.jpg" alt="..." />
 
+                    <img class="img-fluid" src="assets/img/portfolio/book.jpg" alt="..." />
+                    <div class="portfolio-item">
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Book Club</div>
                             <div class="portfolio-caption-subheading text-muted">Full stack group book recommendation
@@ -188,17 +218,23 @@
                 <div class="col-lg-10 col-sm-6 mb-4 special-col">
                     <div class="portfolio-description">
                         <ul>
-                            <li>fadjlkasdflkjhnjer evjnefje ejlnef</li>
-                            <li>afwlh filuhneg fwkjnwe</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr afwlh filuhneg fwkjnwe afwlh filuhneg fwkjnwe</li>
+                            <li>"Book Club" is a full-stack book search engine that integrates the reading preferences
+                                of a group in order to suggest books that everyone will enjoy</li>
+                            <li>Search engine has access to over 20 GB of goodreads book review data, including
+                                tens of thousands of books</li>
+                            <li>Machine learning and similarity scoring techinques allow the recommender to find the
+                                best recommendations</li>
+                            <li>Selected for course <a href="https://4300-hall-of-fame.infosci.cornell.edu/"
+                                    target="_blank">Hall of Fame</a>, awarded to only 3 projects
+                                out of ~50</li>
                         </ul>
                     </div>
                     <div class="portfolio-buttons">
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Website</a>
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Code</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="http://bookclub-4300.herokuapp.com" target=_blank rel=noopener>Website</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="https://github.com/kurthueb/cs4300sp2020-krh57-cel243-esf76-jjw249-tz376"
+                            target=_blank rel=noopener>Code</a>
                     </div>
                 </div>
 
@@ -208,14 +244,14 @@
 
                 </div>
 
-                <div class="col-lg-2 col-sm-6 mb-4 special-col">
+                <div class="col-lg-2 col-sm-6 mb-4 special-col no-padding">
                     <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/chess.jpg" alt="..." />
 
+                    <img class="img-fluid" src="assets/img/portfolio/chess.jpg" alt="..." />
+                    <div class="portfolio-item">
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Terminal Chess</div>
-                            <div class="portfolio-caption-subheading text-muted">Temineral-based multi-player chess with
+                            <div class="portfolio-caption-subheading text-muted">Terminal-based multi-player chess with
                                 AI player</div>
                         </div>
                     </div>
@@ -223,15 +259,26 @@
                 <div class="col-lg-10 col-sm-6 mb-4 special-col">
                     <div class="portfolio-description">
                         <ul>
-                            <li>fadjlkasdflkjhnjer evjnefje ejlnef</li>
-                            <li>afwlh filuhneg fwkjnwe</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr afwlh filuhneg fwkjnwe afwlh filuhneg fwkjnwe</li>
+                            <li>Collaborated with group of three to conceptualize, design, and develop fully-functional
+                                terminal-based chess experience
+                                written entirely in OCaml</li>
+                            <li>
+                                Features AI opponent and intelligent move recommendations
+                            </li>
+                            <li>
+                                Detects illegal chess moves, and supports all chess features including en-passant,
+                                castling, queening, etc.
+                            </li>
+                            <li>Detects check, checkmate, and stalemate </li>
+                            <li>Supports saving and loading games</li>
+                            <li>Enhanced game features such as visually displaying possible moves and pieces under
+                                attack
+                            </li>
                         </ul>
                     </div>
                     <div class="portfolio-buttons">
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Code</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="https://github.com/cel243/Terminal-Chess" target=_blank rel=noopener>Code</a>
                     </div>
                 </div>
 
@@ -241,11 +288,11 @@
                 <div class="col-lg-4 col-sm-6 mb-4 disappear-to-fix-shrink">
                 </div>
 
-                <div class="col-lg-2 col-sm-6 mb-4 special-col">
+                <div class="col-lg-2 col-sm-6 mb-4 special-col no-padding">
                     <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/search.jpg" alt="..." />
 
+                    <img class="img-fluid" src="assets/img/portfolio/search.jpg" alt="..." />
+                    <div class="portfolio-item">
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Pale Metadata Tool</div>
                             <div class="portfolio-caption-subheading text-muted">Quote-finding and chapter
@@ -256,15 +303,19 @@
                 <div class="col-lg-10 col-sm-6 mb-4 special-col">
                     <div class="portfolio-description">
                         <ul>
-                            <li>fadjlkasdflkjhnjer evjnefje ejlnef</li>
-                            <li>afwlh filuhneg fwkjnwe</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr afwlh filuhneg fwkjnwe afwlh filuhneg fwkjnwe</li>
+                            <li>An efficient tool allowing readers to search for quotes/evidence in the murder
+                                mystery web serial Pale, by J.C. McCrae </li>
+                            <li>Improves on deficiencies in Wordpress's built in search feature, e.g. slow retrieval,
+                                returning chapter links instead of matched quote in context, etc.</li>
+                            <li>Allows regular expression search, adjustable quote context window, filtering by arc,
+                                filtering by chapter perspective, and more</li>
+                            <li>Offers other metadata services, like chapter synopsis search and word count breakdowns
+                            </li>
                         </ul>
                     </div>
                     <div class="portfolio-buttons">
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Code</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="https://github.com/cel243/Pale_Quote_Finder" target=_blank rel=noopener>Code</a>
                     </div>
                 </div>
 
@@ -275,14 +326,15 @@
 
                 </div>
 
-                <div class="col-lg-2 col-sm-6 mb-4 special-col">
+                <div class="col-lg-2 col-sm-6 mb-4 special-col no-padding">
                     <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/reasoning.jpg" alt="..." />
 
+                    <img class="img-fluid" src="assets/img/portfolio/reasoning.jpg" alt="..." />
+                    <div class="portfolio-item">
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Commonsense Reasoning Classifier</div>
-                            <div class="portfolio-caption-subheading text-muted">Approaches Story-cloze test dataset
+                            <div class="portfolio-caption-subheading text-muted">Story ending
+                                prediction for the Story-Cloze Test dataset
                             </div>
                         </div>
                     </div>
@@ -290,15 +342,18 @@
                 <div class="col-lg-10 col-sm-6 mb-4 special-col">
                     <div class="portfolio-description">
                         <ul>
-                            <li>fadjlkasdflkjhnjer evjnefje ejlnef</li>
-                            <li>afwlh filuhneg fwkjnwe</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr</li>
-                            <li>waflkjnkjnet fkjnwrfjkn qekjr afwlh filuhneg fwkjnwe afwlh filuhneg fwkjnwe</li>
+                            <li>Created feedforward neural network that predicted the ending of 4-sentence stories</li>
+                            <li>Exceeded highest accuracy threshold given as part of the project assignment</li>
+                            <li>Designed and optimized feature-extraction pipeline for vector modelling of the data</li>
+                            <li>Used sentiment scoring, word embeddings, and part-of-speech tagging to represent the
+                                data</li>
+                            <li>Approached the same task using HuggingFace's transformer model</li>
                         </ul>
                     </div>
                     <div class="portfolio-buttons">
-                        <a class="btn btn-outline-primary btn-page-header btn-sm" href="" target=_blank
-                            rel=noopener>Report</a>
+                        <a class="btn btn-outline-primary btn-page-header btn-sm"
+                            href="https://docs.google.com/document/d/1YFxa146kiyxIix4sQ1HhlcTTJJ8gB7TWCJfS31YaDmQ/edit?usp=sharing"
+                            target=_blank rel=noopener>Report</a>
                     </div>
                 </div>
 
@@ -308,7 +363,7 @@
         </div>
     </section>
     <!-- About-->
-    <section class="page-section" id="about">
+    <section class="page-section" id="journey">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">My Journey</h2>
@@ -316,7 +371,7 @@
             </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.jpg"
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.png"
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -324,9 +379,12 @@
                             <h4 class="subheading">Entering Cornell</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                I began as a student in Cornell's College of Engineering in Fall 2018. I soon affiliated
+                                with the Computer Science major, and have taken courses in data structure, algorithms,
+                                functional programming, natural language processing, AI, machine learning, computer
+                                vision, system security, formal verification, and more!
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -339,14 +397,27 @@
                             <h4 class="subheading">Contractor With HCA/Parallon</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                At HCA, I worked on the Strategic Data Services team, using SQL to write scripts for
+                                data management and analysis. I had three major projects while working for HCA.
+                                <br /><br />
+                                First, I
+                                worked independently with a key data table that tracked resource usage, identifying
+                                inconsistencies and redundancies in the data and writing a SQL tool that stadardized the
+                                data while also reducing it's size by 90%, allowing underutilized resources to be
+                                identified. <br /><br /> Second, I used SQL to automate a previously manual analysis of
+                                a
+                                30-million-record table to evaluation collections performance across facilities.
+                                <br /><br /> Finally, I designed an developed a chatbot AI in Python that could decode
+                                complex user
+                                messages to generate and run SQL queries, enabling efficient access to insurance denials
+                                data for teams that were not proficient in SQL.
+                            </p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.jpg"
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.png"
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -354,14 +425,17 @@
                             <h4 class="subheading">Began as TA for CS 2800: Discrete Structures</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                My Sophomore year was the start of my TA journey! I first discovered
+                                my passion for teaching as a TA for Discrete Structures, a core requirement for the CS
+                                major. In my first year as a TA, I taught a discussion section, held office hours, and
+                                contributed to grading around 300 homework submissions every week.
+                            </p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/google.jpg"
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/google.png"
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -369,14 +443,20 @@
                             <h4 class="subheading">Google STEP Internship</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                At Google, I worked with a pod of two other interns to design, create, and present a
+                                full stack metadata dashboard application intended to aid consumers in visualizing the
+                                long-term impact of accepting Google Cloud Platform IAM Binding
+                                recommendations.<br /><br />My main
+                                role in this project was designing and implementing the database layer of the
+                                application, using Java, SQL, and Google Bigquery. I also designed a data pipeline for
+                                automated dashboard data updates.
+                            </p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.jpg"
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.png"
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -384,14 +464,19 @@
                             <h4 class="subheading">Began as TA for CS 4820: Algorithms</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                In my junior year, I applied to TA Algorithms, another core CS course. As a TA for this
+                                class, I again held office hours and contributed to grading around 400 submissions per
+                                week. Since school was hyprid for this year, I also stepped up as the 'chat TA' who
+                                answered students' questions during lecture in the Zoom chat! After 4 semester of
+                                holding office hours and finding the best way to answer students' questions, I think I
+                                developed my communication skills quite a bit.
+                            </p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/google.jpg"
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/google.png"
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -399,14 +484,19 @@
                             <h4 class="subheading">Google SWE Internship</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                At my second Google internship, I created a metadata service that
+                                simplified access to information about a YouTube Ads data repository. The service took
+                                the form of a server and client command-line tool written in C++. I fully designed the
+                                project, and learned new technologies to work within the existing company infrastructure
+                                to be able to set up regular tool updates and automated ongoing testing. I also created
+                                a monitoring dashboard to report latency, QPS, and error rates, as well as fire alerts
+                                on abnormal behavior. </p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.jpg"
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cornell.png"
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -414,14 +504,20 @@
                             <h4 class="subheading">Head TA for CS 2800: Discrete Structures</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                In my last semester of college, I switched back to working as a TA for Discrete
+                                Structures, this time as a Head TA. In this role, I not only continued my regular duties
+                                of running a discussion section, holding office hours, and grading, but I also managed a
+                                grading group of undergraduate TAs, wrote grading rubrics, responded to regrades
+                                requests, and managed other logistics within course staff. Working in this role helped
+                                me
+                                develop my organizational and leadership abilities!
+                            </p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/google.jpg"
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/google.png"
                             alt="..." /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -429,9 +525,10 @@
                             <h4 class="subheading">Next Stop: Google!</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                            <p class="text-muted">
+                                After graduation, I will be returning to Google as a full-time Software Engineer for
+                                Youtube Ads Data Infrastructure!
+                            </p>
                         </div>
                     </div>
                 </li>

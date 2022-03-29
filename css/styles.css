@@ -701,7 +701,7 @@ progress {
 .special-col {
   background-color: white;
   box-shadow:0 1px 4px rgba(0,0,0,4%);
-  border:1px solid rgba(0,0,0,9%);
+  border:1px solid rgba(0,0,0,15%);
   border-radius:3px;
   margin-top:20px;
   padding:5px 10px;
@@ -992,7 +992,7 @@ progress {
 
   .col-sm-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 45%;
   }
 
   .col-sm-7 {
@@ -1413,7 +1413,7 @@ progress {
 
   .col-lg-2 {
     flex: 0 0 auto;
-    max-width: 16.66666667%;
+    max-width: 18%;
   }
 
   .col-lg-2-mine {
@@ -11525,10 +11525,15 @@ header.masthead .masthead-heading {
 
 #portfolio .portfolio-description {
   font-size: 1rem;
+  padding : 0.5em 0rem 0rem 0rem;
+}
+
+#portfolio .portfolio-description li {
+  padding : 0.5em 0rem 0rem 0rem;
 }
 
 #portfolio .portfolio-buttons {
-  padding-top : 8em;
+  padding-top : 1em;
   padding-left: 15px;
   padding-bottom: 5px;
 }
@@ -11539,6 +11544,9 @@ header.masthead .masthead-heading {
   }
 }
 
+.no-padding {
+  padding : 0px !important
+}
 
 #portfolio .portfolio-item {
   max-width: 26rem;
@@ -11571,7 +11579,7 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   text-align: left;
   background-color: #fff;
-  padding : 0rem 0rem 0rem 0rem;
+  padding : 0.5rem;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
