@@ -151,7 +151,7 @@ out_lines = [
 "<html lang=\"en\">\n",
 "  <head>\n",
 "    <link href=\"css/styles.css\" rel=\"stylesheet\" />\n",
-"  <body> \n",
+"  </head> <body> \n",
 f"{nav_tabs}</div>\n",
 "  <div>\n"
 ] + out_lines + [
