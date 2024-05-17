@@ -20,11 +20,11 @@ def to_am_pm_time(time_str):
 def get_header(size, text, styling=""):
   return f"    <h{size} {styling}>{text}</h{size}>\n"
 
-def get_img_html(src_ls, img_class):
+def get_img_html(src_ls):
   img_html_ls = []
   for src in src_ls:
-    img_html_ls.append(f"      <img class=\"{img_class}\" src=\"{src}\"/>\n")
-  return img_html_ls
+    img_html_ls.append(f"      <img class=\"img-class\" src=\"{src}\"/>\n")
+  return ["<div class=\"img-container\">"] + img_html_ls + ["</div>"]
 
 def get_time_html(figure_times):
   if len(figure_times) < 2:
@@ -34,6 +34,8 @@ def get_time_html(figure_times):
 
 def get_grouping_id(note):
   id_search = re.search(".*:([0-9]+):", note)
+  if not id_search:
+    id_search = re.search(".*\[([0-9]+)\]", note)
   if id_search:
     return id_search.group(1)
   else:
@@ -54,9 +56,10 @@ def get_text_caption(filenames, i):
     with open(os.path.join(DIRNAME, filename), 'r') as f:
       note = f.read().strip()
       group_id = get_grouping_id(note)
-      is_binge = True if (re.search(".*:binge:", note, re.IGNORECASE) is not None) else None
-      is_note_only = True if (re.search(".*:note:", note, re.IGNORECASE) is not None) else None
+      is_binge = True if (re.search(".*:binge:", note, re.IGNORECASE) is not None) or (re.search(".*\[binge\]", note, re.IGNORECASE) is not None) else None
+      is_note_only = True if (re.search(".*:note:", note, re.IGNORECASE) is not None) or (re.search(".*\[note\]", note, re.IGNORECASE) is not None) else None
       caption = re.sub(":[^:]+:", "", note).strip()
+      caption = re.sub("\[[^\[\]]+\]", "", caption).strip()
       return i+1, (caption, group_id, is_binge, is_note_only)
 
 # return figure_info (possibly updated), new_figure_info (possibly None)
@@ -96,13 +99,11 @@ def add_figure_to_output(figure_info, out_lines):
     return out_lines
   binge_class = "binge" if figure_info["binge"] else ""
   caption = "<br>".join(figure_info["caption_lines"])
-  img_style = "img-class-large" if len(figure_info["images"]) == 1 else "img-class-small"
-  image_html_ls = [""] if figure_info["note_only"] else get_img_html(figure_info["images"], img_style)
+  image_html_ls = [""] if figure_info["note_only"] else get_img_html(figure_info["images"])
   return out_lines + (
-    [f"    <figure class=\"outer-figure\"><figure class=\"inner-figure {binge_class}\">\n",
+    [f"   <figure class=\"inner-figure {binge_class}\">\n",
             get_time_html(figure_info["times"])] +
             image_html_ls + [
-    f"      </figure>",
     f"      <figcaption>{caption}</figcaption>\n",
      "    </figure>\n"])
 
@@ -139,7 +140,7 @@ while i < len(filenames):
   date_from_filename = re.search("^(\d{4}-\d{2}-\d{2})", filename).group(1)
   if date_from_filename != date:
     date = date_from_filename
-    out_lines.append(f"    </div><div id=\"{date}\"><h1>{date}</h1>\n")
+    out_lines.append(f"    </div><div id=\"{date}\" class=\"tabcontent\"><h1>{date}</h1>\n")
     nav_tabs += f"<button class=\"tablinks\" onclick=\"openDate(event, '{date}')\">{date}</button>"
 
   i += 1
@@ -155,7 +156,7 @@ out_lines = [
 f"{nav_tabs}</div>\n",
 "  <div>\n"
 ] + out_lines + [
-  "  <script src=\"js/scripts.js\"></script>\n",
+  "  </div><script src=\"js/scripts.js\"></script>\n",
   "  </body>\n",
 "</html>\n"
 ]

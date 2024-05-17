@@ -15,6 +15,10 @@ function openDate(evt, dateName) {
   }
 
   // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(dateName).style.display = "block";
+  document.getElementById(dateName).style.display = "flex";
   evt.currentTarget.className += " active";
+}
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].style.display = "none";
 }
