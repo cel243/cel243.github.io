@@ -1,3 +1,5 @@
+* {box-sizing: border-box}
+
 .img-class-small {
   max-width:40%;
 }
