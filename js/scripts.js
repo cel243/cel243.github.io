@@ -19,6 +19,7 @@ function openDate(evt, dateName) {
   evt.currentTarget.className += " active";
 }
 tabcontent = document.getElementsByClassName("tabcontent");
-for (i = 0; i < tabcontent.length; i++) {
+tabcontent[0].style.display = "flex"
+for (i = 1; i < tabcontent.length; i++) {
   tabcontent[i].style.display = "none";
 }

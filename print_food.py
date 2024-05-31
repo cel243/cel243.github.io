@@ -22,9 +22,15 @@ def get_header(size, text, styling=""):
 
 def get_img_html(src_ls):
   img_html_ls = []
+  if len(src_ls) > 1:
+    img_container_class = "img-container-multi"
+    img_class = "img-class-multi"
+  else:
+    img_container_class = "img-container"
+    img_class = "img-class"
   for src in src_ls:
-    img_html_ls.append(f"      <img class=\"img-class\" src=\"{src}\"/>\n")
-  return ["<div class=\"img-container\">"] + img_html_ls + ["</div>"]
+    img_html_ls.append(f"      <img class=\"{img_class}\" src=\"{src}\"/>\n")
+  return [f"<div class=\"{img_container_class}\">"] + img_html_ls + ["</div>"]
 
 def get_time_html(figure_times):
   if len(figure_times) < 2:
@@ -100,8 +106,12 @@ def add_figure_to_output(figure_info, out_lines):
   binge_class = "binge" if figure_info["binge"] else ""
   caption = "<br>".join(figure_info["caption_lines"])
   image_html_ls = [""] if figure_info["note_only"] else get_img_html(figure_info["images"])
+  if len(figure_info["images"]) > 1:
+    figure_class = "figure-multi"
+  else:
+    figure_class = "figure-class"
   return out_lines + (
-    [f"   <figure class=\"inner-figure {binge_class}\">\n",
+    [f"   <figure class=\"{figure_class} {binge_class}\">\n",
             get_time_html(figure_info["times"])] +
             image_html_ls + [
     f"      <figcaption>{caption}</figcaption>\n",
