@@ -83,6 +83,7 @@ h1 {
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 25px
 }
 
 /* Change background color of buttons on hover */
